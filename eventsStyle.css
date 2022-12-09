@@ -1,0 +1,24 @@
+div
+{
+    text-align: center;
+}
+
+.meowly
+{
+    display:none;
+}
+
+.meowlyH:hover + .meowly
+{
+    display:block;
+}
+
+.whiskers
+{
+    display:none;
+}
+
+.whiskersH:hover + .whiskers
+{
+    display:block;
+}

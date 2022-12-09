@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="eventsStyle.css">
+    <link rel="stylesheet" href="indexStyle.css">
+    <script>
+        
+        function meowly()
+        {
+            outputP = document.getElementById("events");
+            var events=outputP.innerHTML;
+            events+=" Guest Speaker: Ms. Meowly"
+            console.log(events);
+            outputP.innerHTML = events;
+        }
+        function whiskers()
+        {
+            outputP = document.getElementById("events");
+            var events=outputP.innerHTML;
+            events+=" Guest Speaker: Sir Whiskers"
+            console.log(events);
+            outputP.innerHTML = events;
+        }
+        function c()
+        {
+            outputP = document.getElementById("events");
+            var events="Events Registered:";
+            console.log(events);
+            outputP.innerHTML = events;
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Events</h1>
+    <div class="navbar">
+        <a href="index.html" title="Home Page">Home Page</a>
+        <a href="guests.html" title="Guest List">Guest List</a>        
+    </div> 
+    <p>
+        All The Convention's event are listed below, hover over each image to learn more 
+        or sign up to attend! 
+    </p>
+    <p id="events">
+        Events Registered: 
+    </p>
+    <div>
+        <button onclick="c();">Unregister For All Events</button>
+    </div>
+    <hr class="divider">
+    <div>
+        <h2>Guest Speaker: Ms. Meowly</h2>
+        <img class="meowlyH" src="images/meowly.png" alt="Ms. Meowly">
+        <div class="meowly">
+            In this TedTalk styled presentation, Ms. Meowly reveals where 
+            she gets her inspiration for her dresses.
+        </div>
+        <div>
+            <button onclick="meowly();">Register</button>
+        </div>
+    </div>
+    <hr class="divider">
+    <div>
+        <h2>Guest Speaker: Sir Whiskers</h2>
+        <img class="whiskersH" src="images/whiskers.png" alt="Sir Whiskers">
+        <div class="whiskers">
+            Sir Whiskers talks about the fashion he saw during his travels 
+            and the benefits of using a cane.
+        </div>
+        <div>
+            <button onclick="whiskers();">Register</button>
+        </div>
+    </div>
+    <hr class="divider">
+</body>
+</html>
